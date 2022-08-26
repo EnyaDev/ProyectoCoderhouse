@@ -131,3 +131,123 @@ form {
 }
 
 
+/**TABLET VERSION**/
+
+@media (min-width: 768px) and (max-width: 900px) {
+  /****HEADER****/
+  .container .navbar-brand img {
+    width: 300px;
+  }
+  nav {
+    width: 550px;
+    height: 100px;
+    padding: 0;
+    margin: 10px;
+  }
+  header nav ul li a {
+    padding: 5px;
+    font-size: 12px;
+  }
+  /****FOOTER****/
+  footer {
+    padding: 10px;
+  }
+  footer .col p {
+    font-size: 11px;
+  }
+  footer ul li {
+    font-size: 13px;
+  }
+  footer .col .redesSociales a {
+    display: inline-block;
+    padding: 5px;
+  }
+  /****HAZLO TÚ MISMO!****/
+  .card {
+    display: grid;
+    grid-template-columns: 40% 50%;
+    width: 600px;
+  }
+  .card img {
+    width: 200px;
+    height: 100%;
+  }
+  /****GALERÍA****/
+  .row .col img {
+    width: 150px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  /****CONTACTO****/
+  form {
+    width: 450px;
+    padding: 30px;
+  }
+
+}
+
+/* DESKTOP VERSION */
+
+@media (min-width: 992px) and (max-width: 1280px) {
+
+  /****HEADER****/
+  .container .navbar-brand img {
+    width: 300px;
+  }
+  nav {
+    width: 600px;
+    height: 100px;
+    padding: 0;
+    margin: 10px;
+  }
+  header nav ul li a {
+    padding: 10px;
+    font-size: 14px;
+  }
+/****FOOTER****/
+footer{
+  padding: 20px;
+}
+footer .col .redesSociales a {
+  padding: 5px;
+}
+/****INDEX****/
+.main-box {
+  height: 600px;
+}
+.main-box img {
+  width: 100%;
+  height: 250px;
+}
+.col .raky p {
+  animation-name: texto;
+  animation-duration: 2.5s;
+  animation-iteration-count: 2;
+}
+/****HAZLO TÚ MISMO!****/
+.heading h3{
+  font-size: 32px;
+  font-weight: 600;
+}
+.card {
+  display: grid;
+  grid-template-columns: 40% 50%;
+  width: 600px;
+}
+.card img {
+  width: 200px;
+  height: 100%;
+}
+/****GALERÍA****/
+.row .col img {
+  width: 250px;
+  margin-top: 20px;
+  text-align: center;
+}
+/****CONTACTO****/
+form {
+  width: 500px;
+  padding: 30px;
+}
+
+}
