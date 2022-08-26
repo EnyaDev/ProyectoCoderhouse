@@ -1,0 +1,133 @@
+html {
+  position: relative;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*MOBILE FIRST*/
+
+body {
+  background-color: #efe1de;
+  font-family: poppins;
+}
+
+/****HEADER****/
+header {
+  display: flex;
+  background-color: #f8f8f8;
+}
+.navbar-brand img {
+  width: 250px;
+}
+nav ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: #56c6c1;
+  font-size: 11px;
+}
+nav ul li a:hover {
+  color: white;
+  background-color: #aee4e1;
+  border-radius: 25px;
+}
+
+/****FOOTER****/
+footer {
+  width: 100%;
+  background-color: #f8f8f8;
+}
+footer .row .col img {
+  width: 200px;
+}
+footer .col .redesSociales a {
+  color: #56c6c1;
+  transition: all 300ms ease;
+  text-decoration: none;
+}
+footer .col .redesSociales a:hover {
+  color: rgb(206, 55, 116);
+}
+small {
+  color: rgb(206, 55, 116);
+  text-align: center;
+}
+
+/****INDEX****/
+
+.main-box {
+  height: 500px;
+}
+.col h2,
+.raky p {
+  text-align: center;
+  margin: 20px;
+  padding: 5px;
+}
+.main-box img:hover {
+  filter: opacity(0.9);
+}
+.col h2:hover {
+  filter: opacity(0.9);
+  transform: scale(1.02);
+}
+
+@keyframes texto {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.col .raky p {
+  animation-name: texto;
+  animation-duration: 2.5s;
+  animation-iteration-count: 1;
+}
+/****HAZLO TÚ MISMO!****/
+
+.card {
+  width: 250px;
+  background: linear-gradient(to right, #efe1de, #ffffff);
+  border: 1px solid #aee4e1;
+}
+.card:hover {
+  filter: opacity(0.9);
+  transform: scale(1.02);
+}
+.card img {
+  width: 100%;
+  height: 200px;
+}
+.card p {
+  font-size: 13px;
+}
+
+/****GALERÍA****/
+
+.row .col img {
+  width: 100px;
+  margin: 5px;
+}
+.row .col img:hover {
+  filter: opacity(0.9);
+  transform: scale(1.05);
+}
+
+/****CONTACTO****/
+form {
+  height: auto;
+  width: 350px;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 4px;
+}
+.btn input {
+  background: transparent;
+}
+
+
