@@ -1,3 +1,13 @@
+//SASS//
+
+@import "variables";
+@import "header" ;
+@import "footer";
+@import "maps";
+@import "extend";
+@import "mixin";
+
+
 html {
   position: relative;
   scroll-behavior:smooth;
@@ -13,58 +23,10 @@ html {
 
 
 body {
-  background-color: #efe1de;
+  background-color: $colorBody;
   font-family: poppins;
 }
-/****HEADER****/
-header {
-  display: flex;
-  background-color: #f8f8f8;
 
-  .navbar-brand img {
-    width: 200px;
-    margin-bottom: 10px;
-  }
-  nav ul li a {
-    list-style: none;
-    text-decoration: none;
-    color: #56c6c1;
-    font-size: 11px;
-
-    &:hover {
-      color: white;
-      background-color: #aee4e1;
-      border-radius: 25px;
-    }
-  }
-}
-/****FOOTER****/
-footer {
-  width: 100%;
-  background-color: #f8f8f8;
-
-  h4 {
-    margin: 10px;
-  }
-  .row .col img {
-    width: 250px;
-  }
-  .col .redesSociales a {
-    font-size: 18px;
-    padding: 10px;
-    color: #56c6c1;
-    transition: all 300ms ease;
-    text-decoration: none;
-
-    &:hover {
-      color: rgb(206, 55, 116);
-    }
-  }
-  small {
-    color: rgb(206, 55, 116);
-    text-align: center;
-  }
-}
 /***  INDEX  ***/
 .main-box {
   height: 500px;
@@ -79,6 +41,7 @@ footer {
     filter: opacity(0.9);
   }
   .col {
+    
     h2:hover {
       filter: opacity(0.9);
       transform: scale(1.02);
@@ -86,7 +49,7 @@ footer {
       .raky p {
         animation-name: texto;
         animation-duration: 2.5s;
-        animation-iteration-count: 1;
+        animation-iteration-count: infinite;
 
         @keyframes texto {
           0% {
@@ -118,19 +81,20 @@ footer {
 /***  HAZLO TÚ MISMO!  ***/
 .card {
   width: 250px;
-  background: linear-gradient(to right, #efe1de, #ffffff);
-  border: 1px solid #aee4e1;
+  background: linear-gradient(to right, $colorBody, #ffffff);
+  border: 1px solid $colorHover;
 
   &:hover {
     filter: opacity(0.9);
     transform: scale(1.02);
   }
+
   img {
     width: 100%;
     height: 200px;
   }
   p {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 /****GALERÍA****/
@@ -292,10 +256,6 @@ form {
     }
   }
   /****HAZLO TÚ MISMO!****/
-  .heading h3 {
-    font-size: 32px;
-    font-weight: 600;
-  }
   .card {
     display: grid;
     grid-template-columns: 40% 50%;

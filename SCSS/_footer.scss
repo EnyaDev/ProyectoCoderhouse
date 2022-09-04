@@ -1,0 +1,26 @@
+footer {
+    width: 100%;
+    background-color: $colorLogo;
+  
+    h4 {
+      margin: 10px;
+    }
+    .row .col img {
+      width: 250px;
+    }
+    .col .redesSociales a {
+      font-size: 18px;
+      padding: 10px;
+      color: $colorPrincipal;
+      transition: all 300ms ease;
+      text-decoration: none;
+  
+      &:hover {
+        color: $colorSecundario;
+      }
+    }
+    small {
+      color: $colorSecundario;
+      text-align: center;
+    }
+  }

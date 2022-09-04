@@ -1,0 +1,21 @@
+header {
+    display: flex;
+    background-color: $colorLogo;
+  
+    .navbar-brand img {
+      width: 200px;
+      margin-bottom: 10px;
+    }
+    nav ul li a {
+      list-style: none;
+      text-decoration: none;
+      color: $colorPrincipal;
+      font-size: 11px;
+  
+      &:hover {
+        color: white;
+        background-color: $colorHover;
+        border-radius: 25px;
+      }
+    }
+  }

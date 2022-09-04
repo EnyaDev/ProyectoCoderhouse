@@ -1,0 +1,18 @@
+/*MAPS*/
+
+$mapSmall: (small: rgb(206, 55, 116));
+
+@each $copy, $colorSecundario in $mapSmall {
+
+    .#{$copy} {
+        color: $colorSecundario;
+    }
+}
+
+/*MAP - GET*/
+
+$estilo: (color: #56c6c1, fontSize: 13px);
+.redesSociales {
+    color: map-get($estilo,color);
+    font-size: map-get($estilo,fontSize);
+}

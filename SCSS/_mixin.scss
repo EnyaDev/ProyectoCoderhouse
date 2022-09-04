@@ -1,0 +1,11 @@
+/*MIXIN*/
+
+@mixin pExtendido {
+    font-family: poppins;
+    font-size: 13px;
+    text-align: justify;
+}
+
+.about p {
+    @include pExtendido;
+}
